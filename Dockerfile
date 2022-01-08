@@ -1,14 +1,28 @@
-FROM ruby:3.0.2-alpine
+FROM ruby:3.1.0-alpine
 
 RUN apk add --no-cache --update \
    build-base \
    bash \
    git \
+    # Postgres
    postgresql-dev \
-   nodejs \
+   # Javascript
    yarn \
+  # Image Resizing
    imagemagick \
+   vips \
+    # ActiveStorage file inspection
+   file \
+   # Time zone data
    tzdata \
+   # Nokogiri Libraries
+   zlib-dev \
+   libxml2-dev \
+   libxslt-dev \
+   # Nice to have
+   bash \
+   git \
+   vim \
    && rm -rf /var/cache/apk/*
 
 RUN mkdir -p /myapp
