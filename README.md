@@ -1,6 +1,6 @@
 # Docker with Rails 7
 
-1. Clone repo and rename new folder to project name
+1. Clone repo and rename new folder to project name [$ git clone repo-name folder-name]
 
 2. (optional) Open project in editor and rename all instances of 'myapp' to the project name.
 
